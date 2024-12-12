@@ -1,0 +1,79 @@
+ body {
+        font-family: 'Arial', sans-serif;
+        background: #121212;
+        color: #e0e0e0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .card {
+        background: #1e1e1e;
+        border: none;
+        border-radius: 15px;
+    }
+
+    #locationInput {
+        border-radius: 10px 0 0 10px;
+        background: #252525;
+        color: #e0e0e0;
+        border: 1px solid #444;
+        flex-grow: 1;
+        min-width: 300px; /* Ensures a minimum width */
+        max-width: 500px; /* Prevents it from becoming too wide */
+    }
+
+    #locationInput:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 8px #007bff;
+    }
+
+    #forecastContainer {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .btn-primary {
+        border-radius: 0 10px 10px 0;
+        background: #007bff;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background: #0056b3;
+        box-shadow: 0 4px 10px rgba(0, 91, 187, 0.5);
+    }
+
+    .table {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .d-flex button {
+        min-width: 120px;
+    }
+
+    .btn-outline-danger {
+        border-color: #dc3545;
+        color: #dc3545;
+    }
+
+    .btn-outline-danger:hover {
+        background: #dc3545;
+        color: #fff;
+    }
+
+    .errorMessage {
+        font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
